@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>STACKATHON // SIMPLE // SAMPLER // SEQUENCER</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/jquery/jquery.js"></script>
+  <script src="../scripts/nexusUI.js"></script>
+  <script type="text/javascript" src="../scripts/nexusUI.js"></script>
+  <script type="text/javascript" src="/tone/Tone.js"></script>
+  <script src="../scripts/interface.js"></script>
+  <script src="../scripts/samplerA.js"></script>
+  <script src="../scripts/samplerB.js"></script>
+  <script src="../scripts/sequencer.js"></script>
+</head>
+
+<body>
+  <div id="instrument">
+
+    <div class="sampler-container">
+      <canvas nx="matrix" id="samplerAsequencer"></canvas>
+    </div>
+
+    <div class="mixer-container">
+
+      <div class="channelA">
+        <div class="EQ">
+          <canvas nx="dial" id="samplerAeqHigh"></canvas>
+          <canvas nx="dial" id="samplerAeqMid"></canvas>
+          <canvas nx="dial" id="samplerAeqLow"></canvas>
+        </div>
+        <div class="channel-fader">
+          <canvas nx="slider" id="samplerAvolume"></canvas>
+        </div>
+      </div>
+
+      <div class="channelA-fx">
+
+      </div>
+
+      <div class="transport">
+          <canvas nx="button" id="start" label="START"></canvas>
+          <canvas nx="dial" id="bpm" label="BPM"></canvas>
+          <canvas nx="button" id="stop" label="STOP"></canvas>
+      </div>
+
+      <div class-="channelB-fx">
+
+      </div>
+
+      <div class="channelB">
+        <div class="channel-fader">
+          <canvas nx="slider" id="samplerBvolume"></canvas>
+        </div>
+        <div class="EQ">
+          <canvas nx="dial" id="samplerBeqHigh"></canvas>
+          <canvas nx="dial" id="samplerBeqMid"></canvas>
+          <canvas nx="dial" id="samplerBeqLow"></canvas>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="sampler-container">
+      <canvas nx="matrix" id="samplerBsequencer"></canvas>
+    </div>
+
+  </div>
+  <script src="../scripts/app.js"></script>
+</body>
+
+</html>

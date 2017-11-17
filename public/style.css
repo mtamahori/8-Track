@@ -1,0 +1,83 @@
+/* .samplerA {
+  display: flex;
+  flex-direction: row;
+} */
+
+body {
+  background-color: #778899;
+  display: flex;
+  flex-direction: column;
+}
+
+#instrument {
+  display: flex;
+  flex-direction: column;
+}
+
+#samplerAsequencer {
+  height: 200px;
+  width: 800px;
+  float: left;
+}
+
+#samplerBsequencer {
+  height: 200px;
+  width: 800px;
+  float: left;
+}
+
+.mixer-container {
+  display: flex;
+  flex-direction: row;
+  clear: both;
+  height: 300px;
+  width: 800px;
+}
+
+.channelA {
+  display: flex;
+  flex-direction: row;
+  float: left;
+}
+
+.channelB {
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+
+#samplerAvolume {
+  height: 300px;
+  width: 75px;
+}
+
+#samplerBvolume {
+  height: 300px;
+  width: 75px;
+}
+
+.EQ {
+  display: flex;
+  flex-direction: column;
+}
+
+.transport {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#start {
+  height: 100px;
+  width: 100px;
+}
+
+#stop {
+  height: 100px;
+  width: 100px;
+}
+
+#bpm {
+  height: 100px;
+  width: 100px;
+}
