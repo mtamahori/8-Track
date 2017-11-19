@@ -1,6 +1,6 @@
 Tone.Transport.bpm.value = 110;
 
-const samplerA1 = new Tone.Player("../audio/kick-808.wav");
+const samplerA1 = new Tone.Player("../audio/kick-808.wav").toMaster();
 const samplerA2 = new Tone.Player("../audio/hihat-808.wav").toMaster();
 const samplerA3 = new Tone.Player("../audio/snare-808.wav").toMaster();
 const samplerA4 = new Tone.Player("../audio/kick-808.wav").toMaster();
@@ -40,6 +40,7 @@ function startSamplerA(samplerAsequencer, time, col) {
     samplerAsequencer.place = col;
 }
 
-const samplerA1gain = new Tone.Volume(1);
-samplerA1.chain(samplerA1gain, Tone.Master);
+// const samplerA1gain = new Tone.Volume(0.5);
+// samplerA1.chain(samplerA1gain, Tone.Master);
+
 

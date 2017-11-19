@@ -31,7 +31,7 @@
           <canvas nx="dial" id="samplerAeqLow"></canvas>
         </div>
         <div class="channel-fader">
-          <canvas nx="slider" id="samplerAvolume"></canvas>
+          <canvas nx="slider" id="samplerAvolume" min="-60" max="6"></canvas>
         </div>
       </div>
 
@@ -41,7 +41,7 @@
 
       <div class="transport">
           <canvas nx="button" id="start" label="START"></canvas>
-          <canvas nx="dial" id="bpm" label="BPM"></canvas>
+          <canvas nx="dial" id="bpm" label="BPM" min="60" max="220"></canvas>
           <canvas nx="button" id="stop" label="STOP"></canvas>
       </div>
 
@@ -51,7 +51,7 @@
 
       <div class="channelB">
         <div class="channel-fader">
-          <canvas nx="slider" id="samplerBvolume"></canvas>
+          <canvas nx="slider" id="samplerBvolume" min="-60" max="6"></canvas>
         </div>
         <div class="EQ">
           <canvas nx="dial" id="samplerBeqHigh"></canvas>
