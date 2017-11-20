@@ -1,13 +1,14 @@
 Tone.Transport.bpm.value = 110;
 
 const samplerA1 = new Tone.Player("../audio/kick-808.wav").toMaster();
-const samplerA2 = new Tone.Player("../audio/hihat-808.wav").toMaster();
+const samplerA2 = new Tone.Player("../audio/tom-808.wav").toMaster();
 const samplerA3 = new Tone.Player("../audio/snare-808.wav").toMaster();
-const samplerA4 = new Tone.Player("../audio/kick-808.wav").toMaster();
-const samplerA5 = new Tone.Player("../audio/kick-808.wav").toMaster();
-const samplerA6 = new Tone.Player("../audio/kick-808.wav").toMaster();
-const samplerA7 = new Tone.Player("../audio/kick-808.wav").toMaster();
-const samplerA8 = new Tone.Player("../audio/kick-808.wav").toMaster();
+const samplerA4 = new Tone.Player("../audio/hihat-808.wav").toMaster();
+const samplerA5 = new Tone.Player("../audio/openhat-808.wav").toMaster();
+const samplerA6 = new Tone.Player("../audio/clap-808.wav").toMaster();
+const samplerA7 = new Tone.Player("../audio/perc-808.wav").toMaster();
+const samplerA8 = new Tone.Player("../audio/cowbell-808.wav").toMaster();
+
 
 function startSamplerA(samplerAsequencer, time, col) {
     var column = samplerAsequencer.matrix[col];
@@ -40,7 +41,5 @@ function startSamplerA(samplerAsequencer, time, col) {
     samplerAsequencer.place = col;
 }
 
-// const samplerA1gain = new Tone.Volume(0.5);
-// samplerA1.chain(samplerA1gain, Tone.Master);
 
 

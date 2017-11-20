@@ -29,12 +29,25 @@ nx.onload = () => {
   samplerAeqLow.init();
 
   samplerBeqHigh.set({ value: 0.5 })
+  samplerBeqHigh.init();
   samplerBeqMid.set({ value: 0.5 })
+  samplerBeqMid.init();
   samplerBeqLow.set({ value: 0.5 })
+  samplerBeqLow.init();
 
 
   bpm.init();
 }
+
+$('#start').on('click', function(){
+  Tone.Transport.start();
+  masterSequence.start();
+})
+
+$('#stop').on('click', function(){
+  Tone.Transport.stop();
+  [samplerAsequencer, samplerBsequencer].forEach(sequence => sequence.stop())
+})
 
 bpm.onmouseup = function(){
   console.log('BPM up', bpm.val.value);
@@ -91,16 +104,3 @@ samplerBvolume.onmousedown = function(){
   })
 }
 
-
-$('#start').on('click', function(){
-  Tone.Transport.start();
-  masterSequence.start();
-})
-
-$('#stop').on('click', function(){
-  Tone.Transport.stop();
-  [samplerAsequencer, samplerBsequencer].forEach(sequence => sequence.stop())
-})
-
-
-$('#samplerAeqHigh').on('mouse')
